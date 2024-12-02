@@ -42,19 +42,20 @@ const CinemaSchedule = ({ data }) => {
         <div ref={scrollContainerRef} className="overflow-x-auto scrollbar-hide mx-8" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
           <div className="inline-flex gap-2 p-1">
             {data.map((system) => (
-              <button
+              <div
                 key={system.maHeThongRap}
                 onClick={() => setSelectedSystem(system.maHeThongRap)}
                 className={`
                   min-w-[180px] h-12
                   inline-flex items-center gap-2 px-3
                   rounded-lg transition-all
+                  bg-gray-100
                   ${selectedSystem === system.maHeThongRap ? "bg-blue-50 border-2 border-blue-500" : "border-2 border-transparent hover:bg-gray-50"}
                 `}
               >
                 <img src={system.logo} alt={system.tenHeThongRap} className="w-8 h-8 object-contain flex-shrink-0" />
                 <span className="font-medium text-sm truncate">{system.tenHeThongRap}</span>
-              </button>
+              </div>
             ))}
           </div>
         </div>
@@ -87,7 +88,7 @@ const CinemaSchedule = ({ data }) => {
                 }, {})
               ).map(([date, schedules]) => (
                 <div key={date} className="mb-6">
-                  <h3 className="font-medium text-lg mb-4">{date}</h3>
+                  <h3 className="font-medium text-lg mb-4 ml-2">{date}</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {schedules
                       .sort((a, b) => new Date(a.ngayChieuGioChieu) - new Date(b.ngayChieuGioChieu))

@@ -50,7 +50,7 @@ const MovieBookingBar = () => {
         <div className="hidden lg:grid lg:grid-cols-[1.8fr_1.8fr_1.75fr_1fr] lg:items-center gap-2 bg-white p-4 rounded-lg shadow-lg">
           {/* Phim */}
           <select
-            className={`${selectStyles} w-full`}
+            className={`${selectStyles} w-full bg-white text-gray-800`}
             value={selectedMovie}
             onChange={(e) => {
               setSelectedMovie(e.target.value);
@@ -67,7 +67,7 @@ const MovieBookingBar = () => {
 
           {/* Rạp */}
           <select
-            className={`${selectStyles} w-full ${!selectedMovie ? "cursor-not-allowed bg-gray-100" : ""}`}
+            className={`${selectStyles} w-full text-gray-800 ${!selectedMovie ? "cursor-not-allowed bg-gray-100" : "bg-white"}`}
             disabled={!selectedMovie}
             value={selectedTheater}
             onChange={(e) => {
@@ -86,7 +86,7 @@ const MovieBookingBar = () => {
 
           {/* Ngày giờ chiếu */}
           <select
-            className={`${selectStyles} w-full ${!selectedTheater ? "cursor-not-allowed bg-gray-100" : ""}`}
+            className={`${selectStyles} w-ful text-gray-800 ${!selectedTheater ? "cursor-not-allowed bg-gray-100" : "bg-white"}`}
             disabled={!selectedTheater}
             value={selectedShowtime}
             onChange={(e) => setSelectedShowtime(e.target.value)}

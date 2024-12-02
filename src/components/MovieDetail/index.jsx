@@ -44,7 +44,7 @@ const MovieDetail = () => {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto p-4 mt-14">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden text-gray-950">
         {/* Movie Content */}
         <div className="flex flex-col lg:flex-row">
           {/* Movie Poster */}
@@ -58,7 +58,7 @@ const MovieDetail = () => {
 
           {/* Movie Info */}
           <div className="lg:w-2/3 p-6">
-            <h1 className="text-3xl font-bold mb-4">{tenPhim}</h1>
+            <h1 className="text-3xl font-bold mb-4 text-gray-950">{tenPhim}</h1>
 
             {/* Rating and Duration */}
             <div className="flex items-center gap-6 mb-6">
@@ -66,7 +66,7 @@ const MovieDetail = () => {
                 <Star className="w-5 h-5 text-yellow-400 mr-1" />
                 <span className="font-medium">{danhGia}/10</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center text-gray-950">
                 <Clock className="w-5 h-5 text-gray-500 mr-1" />
                 <span>120 phút</span>
               </div>
@@ -101,7 +101,7 @@ const MovieDetail = () => {
               <button className="px-6 py-3 bg-red-500 text-white font-medium rounded hover:bg-red-600 transition-colors" onClick={scrollToSchedule}>
                 ĐẶT VÉ NGAY
               </button>
-              <button className="px-6 py-3 border border-gray-300 rounded font-medium hover:bg-gray-50 transition-colors" onClick={() => setIsTrailerOpen(true)}>
+              <button className="px-6 py-3 border border-gray-300 bg-gray-100 rounded font-medium hover:bg-gray-300 transition-colors" onClick={() => setIsTrailerOpen(true)}>
                 XEM TRAILER
               </button>
             </div>

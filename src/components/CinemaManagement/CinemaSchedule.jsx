@@ -34,7 +34,7 @@ const MovieSchedule = ({ selectedBranch }) => {
     <div className="flex-1 bg-white overflow-hidden">
       {selectedBranch ? (
         <div className="p-4 h-full overflow-y-auto">
-          <h2 className="font-bold mb-4 pb-2 border-b">Lịch Chiếu {selectedBranch.name}</h2>
+          <h2 className="font-bold mb-4 pb-2 border-b text-gray-800">Lịch Chiếu {selectedBranch.name}</h2>
           <div className="space-y-6">
             {selectedBranch.danhSachPhim.map((movie) => (
               <div key={movie.maPhim} className="border-b pb-4">
@@ -43,8 +43,8 @@ const MovieSchedule = ({ selectedBranch }) => {
                     <img src={movie.hinhAnh} alt={movie.tenPhim} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-medium mb-3 flex items-center gap-2">
-                      <button onClick={() => toggleExpand(movie.maPhim)} className="hover:bg-gray-100 rounded-full p-1 transition-colors">
+                    <h3 className="font-medium mb-3 flex items-center gap-2 text-gray-800">
+                      <button onClick={() => toggleExpand(movie.maPhim)} className="hover:bg-gray-300 bg-gray-100 text-gray-800 rounded-full p-1 transition-colors">
                         {expandedMovies[movie.maPhim] ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                       </button>
                       <span className="px-1.5 py-0.5 bg-orange-500 text-white text-xs rounded">T18</span>

@@ -132,7 +132,7 @@ const BlogTabs = () => {
                   </div>
                   <div className="space-y-2">
                     <div className="text-sm font-medium text-red-500">{article.category}</div>
-                    <h3 className="text-lg font-semibold group-hover:text-red-500 transition-colors">{article.title}</h3>
+                    <h3 className="text-lg font-semibold text-gray-800 group-hover:text-red-500 transition-colors">{article.title}</h3>
                     <p className="text-gray-600 text-sm line-clamp-2">{article.excerpt}</p>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ const BlogTabs = () => {
                     <img src={review.image} alt={review.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-lg font-bold leading-tight group-hover:text-red-500 transition-colors">{review.title}</h3>
+                    <h3 className="text-lg font-bold leading-tight text-gray-800 group-hover:text-red-500 transition-colors">{review.title}</h3>
                     <p className="text-sm text-gray-600 line-clamp-2">{review.description}</p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const BlogTabs = () => {
                 <div className="w-24 h-16 flex-shrink-0 overflow-hidden rounded">
                   <img src={review.image} alt={review.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
                 </div>
-                <h3 className="text-sm font-medium leading-tight group-hover:text-red-500 transition-colors">{review.title}</h3>
+                <h3 className="text-sm font-medium leading-tight text-gray-800 group-hover:text-red-500 transition-colors">{review.title}</h3>
               </div>
             ))}
           </div>

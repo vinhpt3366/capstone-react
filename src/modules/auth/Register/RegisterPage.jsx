@@ -105,7 +105,7 @@ export default function RegisterPage() {
                 value={formData.taiKhoan}
                 onChange={handleChange}
                 placeholder="Nhập tài khoản"
-                className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
             </div>
 
@@ -127,7 +127,7 @@ export default function RegisterPage() {
                   onClick={() => {
                     setShowPassword(!showPassword);
                   }}
-                  className="absolute right-0 top-3 material-icons-outlined text-muted mr-4"
+                  className="absolute right-0 top-3 material-icons-outlined text-muted mr-4 text-gray-500"
                 >
                   {!showPassword ? "visibility" : "visibility_off"}
                 </i>
@@ -146,13 +146,13 @@ export default function RegisterPage() {
                   value={formData.nhapLaiMatKhau}
                   onChange={handleChange}
                   placeholder="Nhập lại mật khẩu"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 />
                 <i
                   onClick={() => {
                     setShowConfirmPassword(!showConfirmPassword);
                   }}
-                  className="absolute right-0 top-3 material-icons-outlined text-muted mr-4"
+                  className="absolute right-0 top-3 material-icons-outlined text-muted mr-4 text-gray-500"
                 >
                   {!showConfirmPassword ? "visibility" : "visibility_off"}
                 </i>

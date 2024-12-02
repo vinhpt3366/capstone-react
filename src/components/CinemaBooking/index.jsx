@@ -110,7 +110,7 @@ const CinemaBooking = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="max-w-5xl mx-auto px-2 py-6">
+    <div className="max-w-5xl mx-auto px-2 py-6 text-gray-950">
       {/* Movie Info */}
       <div className="text-center mb-6">
         {error ? (

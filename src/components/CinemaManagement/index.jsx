@@ -40,7 +40,7 @@ const CinemaManagement = () => {
   };
 
   return (
-    <div className="hidden md:block max-w-[1200px] mx-auto px-4" id="cinema-management">
+    <div className="hidden md:block max-w-[1200px] mx-auto px-4 text-gray-950" id="cinema-management">
       <div className="flex h-[600px] w-full mx-auto border rounded-lg overflow-hidden bg-white">
         <div className={`w-1/8 border- bg-white`}>
           {htRap.map((chain) => (
